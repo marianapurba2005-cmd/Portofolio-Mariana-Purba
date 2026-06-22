@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Mariana Purba</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= PRELOADER ================= -->
+<div id="preloader">
+    <div class="intro-stars">
+        <span class="star s1">✦</span>
+        <span class="star s2">✦</span>
+        <span class="star s3">✦</span>
+        <span class="star s4">✦</span>
+        <span class="star s5">✦</span>
+        <span class="star s6">✦</span>
+        <span class="star s7">✦</span>
+        <span class="star s8">✦</span>
+    </div>
+    <h1 class="intro-text">Welcome To My Portfolio</h1>
+    <h1 class="intro-text">Everything About Me Is Inside Here</h1>
+</div>
+
+<!-- ================= STICKY NAV DESKTOP ================= -->
+<nav class="sticky-nav" id="stickyNav">
+    <div class="sticky-nav-inner">
+        <span class="sticky-nav-name">Mariana Purba</span>
+        <ul class="sticky-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="themeToggleSticky" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </div>
+</nav>
+
+<!-- ================= MOBILE FLOATING BAR ================= -->
+<div class="mobile-bar" id="mobileBar">
+    <span class="mobile-bar-name">✦ Mariana Purba</span>
+    <div class="mobile-bar-controls">
+        <button id="themeToggleMobile" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+        <button id="menuToggleMobile" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</div>
+
+<!-- Mobile dropdown menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
+        <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+        <li><a href="#experience" onclick="closeMobileMenu()">Experience & education</a></li>
+        <li><a href="#skill" onclick="closeMobileMenu()">Skills</a></li>
+        <li><a href="#project" onclick="closeMobileMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+    </ul>
+</div>
+
+<!-- ================= PARALLAX HERO ================= -->
+<section id="parallax">
+    <img src="bintang 1.png" class="star star1" alt="">
+    <img src="bintang 2.png" class="star star2" alt="">
+    <img src="bintang 3.png" class="star star3" alt="">
+    <img src="bintang 4.png" class="star star4" alt="">
+
+    <img src="awan depan.png" class="cloud cloud-left-back" alt="">
+    <img src="awan pink pendek.png" class="cloud cloud-right-back" alt="">
+    <img src="awan belakang.png" class="cloud cloud-left-front" alt="">
+    <img src="awan pendek biru.png" class="cloud cloud-right-front" alt="">
+
+    <img src="unicorn terbang.png" class="unicorn" alt="">
+
+    <div class="intro">
+        <h1 id="typing"></h1>
+
+        <div class="nav-controls desktop-only">
+            <button id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+
+        <ul class="navbar">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="wave-separator">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 80" preserveAspectRatio="none">
+            <path d="M0,40 C480,80 960,0 1440,40 L1440,80 L0,80 Z" fill="#FFF6DA"/>
+        </svg>
+    </div>
+</section>
+
+<!-- ================= HOME ================= -->
+<section id="home" class="hero">
+    <div class="hero-image slide-left">
+        <div class="blob"></div>
+        <img src="profile.jpeg" alt="Mariana Purba">
+    </div>
+
+    <div class="hero-content slide-right">
+        <h2>It's Me...</h2>
+        <h3>Mariana Purba</h3>
+        <p>Mahasiswa Informatika, penggemar Harry Potter, dan pencinta desain yang lembut. Saya senang menciptakan pengalaman visual yang nyaman sekaligus fungsional.</p>
+        <div class="hero-badges">
+            <span class="hero-badge"><i class="fa-brands fa-html5"></i> HTML</span>
+            <span class="hero-badge"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+            <span class="hero-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span class="hero-badge"><i class="fa-solid fa-pencil"></i> Art</span>
+        </div>
+        <a href="https://wa.me/6283891972770" class="btn" target="_blank">
+            <i class="fa-brands fa-whatsapp me-2"></i>Hubungi Saya
+        </a>
+    </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-card reveal">
+        <h3>Who Am I? 🌸</h3>
+        <p>Halo! Saya Mariana Purba, mahasiswa Informatika yang sedang belajar dan berkembang di dunia teknologi. Saya masih berada pada tahap dasar dalam pemrograman, tetapi memiliki rasa penasaran yang tinggi untuk mempelajari lebih dalam tentang bidang ini. Selain itu, saya juga memiliki ketertarikan pada desain dan analisis data yang terus saya kembangkan melalui berbagai pengalaman dan proyek pembelajaran.</p>
+    </div>
+
+    <div class="goal-card reveal">
+        <h3>My Goal 🎯</h3>
+        <p>Saat ini saya terus berusaha mengembangkan kemampuan di bidang pemrograman, desain, dan analisis data. Saya percaya bahwa setiap pengalaman dan proses belajar merupakan langkah penting untuk menjadi pribadi yang lebih baik dan terus berkembang di masa depan.</p>
+    </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience">
+    <h2 class="section-title">Experience</h2>
+
+    <!-- GLOBALART -->
+    <div class="experience-row reveal">
+        <div class="experience-photo">
+            <div class="photo-frame">
+                <img src="WhatsApp Image 2026-06-09 at 00.38.36.jpeg" alt="GlobalArt">
+            </div>
+        </div>
+        <div class="experience-text">
+            <span class="exp-badge">2022 – 2024</span>
+            <h3>GlobalArt</h3>
+            <p class="exp-role"><i class="fa-solid fa-paintbrush me-2"></i>Guru Seni</p>
+            <p>Selama hampir dua tahun bekerja sebagai guru seni, saya belajar banyak tentang cara membimbing anak-anak mengekspresikan kreativitas mereka melalui karya visual.</p>
+        </div>
+    </div>
+
+    <div class="memory-grid">
+        <div class="memory-photo m1"><img src="with gavyn.jpeg" alt="With Gavyn"></div>
+        <div class="memory-photo m2"><img src="with philbert.jpg" alt="With Philbert"></div>
+        <div class="memory-photo m3"><img src="with madeline.jpg" alt="With Madeline"></div>
+    </div>
+
+    <!-- FREELANCE -->
+    <div class="experience-row reverse reveal">
+        <div class="experience-photo">
+            <div class="photo-frame">
+                <img src="kuku sri.jpg" alt="Nail Art">
+            </div>
+        </div>
+        <div class="experience-text">
+            <span class="exp-badge">2023 – Sekarang</span>
+            <h3>Freelance Nail Artist</h3>
+            <p class="exp-role"><i class="fa-solid fa-star me-2"></i>Nail Artist</p>
+            <p>Sebagai freelance nail artist, saya menuangkan kreativitas lewat berbagai desain nail art, mulai dari yang simpel hingga detail rumit sesuai keinginan klien.</p>
+        </div>
+    </div>
+
+    <div class="memory-grid">
+        <div class="memory-photo m1"><img src="kuku audy.jpg" alt="Nail Art 1"></div>
+        <div class="memory-photo m2"><img src="kuku lime.jpg" alt="Nail Art 2"></div>
+        <div class="memory-photo m3"><img src="kuku audy2.jpg" alt="Nail Art 3"></div>
+    </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section id="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="education-layout">
+
+        <!-- TIMELINE CARD -->
+        <div class="edu-card timeline-card" id="timelineCard">
+            <div class="edu-cover">
+                <div class="edu-cover-img timeline-cover-bg">
+                    <i class="fa-solid fa-graduation-cap edu-cover-icon"></i>
+                </div>
+                <div class="edu-cover-text">
+                    <h3>Education Timeline</h3>
+                    <p>Perjalanan pendidikan dari SD hingga kuliah</p>
+                </div>
+            </div>
+
+            <div class="edu-full">
+                <h3>Education Timeline</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>SD Swasta Katolik St. Ignatius Medan</h4>
+                            <span>2011 – 2017</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>SMP Swasta Katolik St. Ignatius Medan</h4>
+                            <span>2017 – 2020</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>SMK Negeri 9 Medan</h4>
+                            <span>2020 – 2023</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Universitas Satya Terra Bhinneka</h4>
+                            <span>2025 – Sekarang</span>
+                            <p>Program Studi Informatika</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CERTIFICATE CARD -->
+        <div class="edu-card certificate-side" id="certificateCard">
+            <div class="edu-cover">
+                <div class="edu-cover-img certificate-cover-bg">
+                    <i class="fa-solid fa-award edu-cover-icon"></i>
+                </div>
+                <div class="edu-cover-text">
+                    <h3>Certificates &amp; Achievements</h3>
+                    <p>Kumpulan sertifikat dan pencapaian</p>
+                </div>
+            </div>
+
+            <div class="edu-full">
+                <h3>Certificates &amp; Achievements</h3>
+                <div class="certificate-grid">
+
+                    <div class="certificate-card" data-title="Microsoft Certificate" data-desc="Microsoft Office Specialist Excel 2019" data-issuer="Microsoft">
+                        <img src="micrsoft.jpeg" alt="Microsoft Certificate">
+                        <div class="cert-card-body">
+                            <h4>Microsoft Certificate</h4>
+                            <p>Microsoft Office Specialist Excel 2019</p>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card" data-title="SDG's Keragaman Sosial" data-desc="Sertifikat Pembelajaran SDG's Keragaman Sosial" data-issuer="SDG Academy Indonesia">
+                        <img src="ESD SErifikat.jpeg" alt="SDG Certificate 1">
+                        <div class="cert-card-body">
+                            <h4>SDG's Keragaman Sosial</h4>
+                            <p>SDG Academy Indonesia</p>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card" data-title="SDG's Kualitas Pendidikan" data-desc="Sertifikat Pembelajaran SDG's Peningkatan Kualitas Pendidikan" data-issuer="SDG Academy Indonesia">
+                        <img src="ESD Sertifikat 2.jpeg" alt="SDG Certificate 2">
+                        <div class="cert-card-body">
+                            <h4>SDG's Kualitas Pendidikan</h4>
+                            <p>SDG Academy Indonesia</p>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card" data-title="Young Speaker International" data-desc="Webinar Internasional Young Speaker Excellent" data-issuer="PT. Bicara Official Indonesia">
+                        <img src="speaking 3.jpeg" alt="Speaking International">
+                        <div class="cert-card-body">
+                            <h4>Young Speaker International</h4>
+                            <p>PT. Bicara Official Indonesia</p>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card" data-title="Young Speaker Nasional" data-desc="Webinar Nasional Young Speaker Excellent" data-issuer="PT. Bicara Official Indonesia">
+                        <img src="speakin.jpeg" alt="Speaking National">
+                        <div class="cert-card-body">
+                            <h4>Young Speaker Nasional</h4>
+                            <p>PT. Bicara Official Indonesia</p>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card" data-title="Finalis 5 Terbaik COMFTIK" data-desc="Finalis 5 Terbaik Desain Web COMFTIK Nasional 2025" data-issuer="Universitas Satya Terra Bhinneka">
+                        <img src="sertifikat 5 terbaik.jpeg" alt="COMFTIK">
+                        <div class="cert-card-body">
+                            <h4>Finalis 5 Terbaik COMFTIK</h4>
+                            <p>Universitas Satya Terra Bhinneka</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= SKILL ================= -->
+<section id="skill">
+    <h2 class="section-title">My Skills</h2>
+
+    <!-- Skill Bars -->
+    <div class="skill-bars-wrap reveal">
+
+        <div class="skill-bar-item">
+            <div class="skill-bar-header">
+                <div class="skill-bar-left">
+                    <div class="skill-bar-icon"><i class="fa-solid fa-pencil"></i></div>
+                    <span class="skill-bar-name">Menggambar</span>
+                </div>
+                <span class="skill-bar-pct">75%</span>
+            </div>
+            <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="75"></div>
+            </div>
+            <div class="skill-bar-ticks">
+                <span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+            </div>
+        </div>
+
+        <div class="skill-bar-item">
+            <div class="skill-bar-header">
+                <div class="skill-bar-left">
+                    <div class="skill-bar-icon"><i class="fa-solid fa-chart-bar"></i></div>
+                    <span class="skill-bar-name">Data Analyst</span>
+                </div>
+                <span class="skill-bar-pct">60%</span>
+            </div>
+            <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="60"></div>
+            </div>
+            <div class="skill-bar-ticks">
+                <span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+            </div>
+        </div>
+
+        <div class="skill-bar-item">
+            <div class="skill-bar-header">
+                <div class="skill-bar-left">
+                    <div class="skill-bar-icon"><i class="fa-brands fa-html5"></i></div>
+                    <span class="skill-bar-name">HTML</span>
+                </div>
+                <span class="skill-bar-pct">40%</span>
+            </div>
+            <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="40"></div>
+            </div>
+            <div class="skill-bar-ticks">
+                <span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+            </div>
+        </div>
+
+        <div class="skill-bar-item">
+            <div class="skill-bar-header">
+                <div class="skill-bar-left">
+                    <div class="skill-bar-icon"><i class="fa-brands fa-css3-alt"></i></div>
+                    <span class="skill-bar-name">CSS</span>
+                </div>
+                <span class="skill-bar-pct">40%</span>
+            </div>
+            <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="40"></div>
+            </div>
+            <div class="skill-bar-ticks">
+                <span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+            </div>
+        </div>
+
+        <div class="skill-bar-item">
+            <div class="skill-bar-header">
+                <div class="skill-bar-left">
+                    <div class="skill-bar-icon"><i class="fa-brands fa-js"></i></div>
+                    <span class="skill-bar-name">JavaScript</span>
+                </div>
+                <span class="skill-bar-pct">35%</span>
+            </div>
+            <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="35"></div>
+            </div>
+            <div class="skill-bar-ticks">
+                <span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+            </div>
+        </div>
+
+        <div class="skill-bar-item">
+            <div class="skill-bar-header">
+                <div class="skill-bar-left">
+                    <div class="skill-bar-icon"><i class="fa-solid fa-language"></i></div>
+                    <span class="skill-bar-name">Bahasa Inggris</span>
+                </div>
+                <span class="skill-bar-pct">55%</span>
+            </div>
+            <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="55"></div>
+            </div>
+            <div class="skill-bar-ticks">
+                <span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Tools & Tech Badges -->
+    <div class="tools-section reveal">
+        <h3 class="tools-title">Tools & Technologies</h3>
+        <div class="tools-grid">
+            <div class="tool-badge">
+                <i class="fa-brands fa-figma"></i>
+                <span>Figma</span>
+            </div>
+            <div class="tool-badge">
+                <i class="fa-solid fa-file-excel"></i>
+                <span>Excel</span>
+            </div>
+            <div class="tool-badge">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+            </div>
+            <div class="tool-badge">
+                <i class="fa-solid fa-code"></i>
+                <span>VS Code</span>
+            </div>
+            <div class="tool-badge">
+                <i class="fa-solid fa-palette"></i>
+                <span>Canva</span>
+            </div>
+            <div class="tool-badge">
+                <i class="fa-solid fa-paint-roller"></i>
+                <span>Nail Art</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= PROJECT ================= -->
+<section id="project">
+    <h2 class="section-title">My Projects</h2>
+    <p class="section-subtitle reveal">A collection of projects where I explore design, development, and creative problem solving.</p>
+
+    <div class="project-grid reveal">
+
+        <!-- Project 1 -->
+        <div class="project-card" 
+             data-title="LearnSphere Website"
+             data-img="learnsphere.png"
+             data-desc="Platform belajar online berbasis AI yang saya desain dan kembangkan untuk project desain web COMFTIK Nasional 2025. Website ini menampilkan fitur-fitur modern seperti konten edukasi interaktif, tampilan yang bersih dan responsif, serta integrasi dengan konsep AI untuk pengalaman belajar yang lebih personal. Saya fokus pada desain yang ramah pengguna dan konsistensi visual di berbagai ukuran layar."
+             data-tags="HTML,CSS,JavaScript"
+             data-github="https://github.com/marianapurba2005-cmd/LearnSphere-Study-with-Ai"
+             data-demo="https://marianapurba2005-cmd.github.io/LearnSphere-Study-with-Ai/">
+            <div class="project-thumb-wrap">
+                <img src="learnsphere.png" class="project-thumb" alt="LearnSphere Website">
+                <div class="project-overlay">
+                    <span>Lihat Detail</span>
+                </div>
+            </div>
+            <div class="project-body">
+                <h3>LearnSphere Website</h3>
+                <p>Platform belajar online berbasis AI untuk project COMFTIK Nasional 2025.</p>
+                <div class="project-tags">
+                    <span class="project-tag">HTML</span>
+                    <span class="project-tag">CSS</span>
+                    <span class="project-tag">JavaScript</span>
+                </div>
+                <div class="project-btns">
+                    <a href="https://github.com/marianapurba2005-cmd/LearnSphere-Study-with-Ai" target="_blank" class="project-btn github">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                    <a href="https://marianapurba2005-cmd.github.io/LearnSphere-Study-with-Ai/" target="_blank" class="project-btn demo">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card"
+             data-title="Buku Tamu Orangutan"
+             data-img="buku tamu.png"
+             data-desc="Aplikasi buku tamu digital berbasis web untuk mendukung program konservasi orangutan. Website ini dilengkapi dengan fitur pencatatan kunjungan, tampilan data pengunjung yang terstruktur, dan antarmuka yang bersih dan mudah digunakan. Proyek ini dikembangkan sebagai bentuk dukungan terhadap upaya pelestarian lingkungan dan edukasi konservasi orangutan di Indonesia."
+             data-tags="HTML,CSS,JavaScript"
+             data-github="https://github.com/marianapurba2005-cmd/digitalGuestOrangutan"
+             data-demo="https://marianapurba2005-cmd.github.io/digitalGuestOrangutan/">
+            <div class="project-thumb-wrap">
+                <img src="buku tamu.png" class="project-thumb" alt="Buku Tamu Orangutan">
+                <div class="project-overlay">
+                    <span>Lihat Detail</span>
+                </div>
+            </div>
+            <div class="project-body">
+                <h3>Buku Tamu Orangutan</h3>
+                <p>Aplikasi buku tamu digital untuk program konservasi orangutan.</p>
+                <div class="project-tags">
+                    <span class="project-tag">HTML</span>
+                    <span class="project-tag">CSS</span>
+                    <span class="project-tag">JavaScript</span>
+                </div>
+                <div class="project-btns">
+                    <a href="https://github.com/marianapurba2005-cmd/digitalGuestOrangutan" target="_blank" class="project-btn github">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                    <a href="https://marianapurba2005-cmd.github.io/digitalGuestOrangutan/" target="_blank" class="project-btn demo">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card"
+             data-title="Figma — Buku Tamu Orangutan"
+             data-img="figma.jpg"
+             data-desc="Desain UI/UX menggunakan Figma untuk aplikasi Buku Tamu Orangutan. Proyek ini berfokus pada perancangan antarmuka yang intuitif dan estetis, mulai dari wireframe hingga desain high-fidelity. Saya merancang alur pengguna, komponen UI, dan sistem warna yang konsisten untuk menciptakan pengalaman yang menyenangkan bagi pengguna aplikasi konservasi ini."
+             data-tags="Figma,UI/UX,Prototyping"
+             data-github="https://github.com/marianapurba2005-cmd/buku-tamu-orangutan-figma/tree/main"
+             data-demo="https://www.figma.com/design/LwxZjfknFT5swmkCEguqIQ/Untitled?node-id=206-3&t=tOG6kmAi270wnlqc-1">
+            <div class="project-thumb-wrap">
+                <img src="figma.jpg" class="project-thumb" alt="Figma Design">
+                <div class="project-overlay">
+                    <span>Lihat Detail</span>
+                </div>
+            </div>
+            <div class="project-body">
+                <h3>Figma — Buku Tamu Orangutan</h3>
+                <p>Desain UI/UX menggunakan Figma untuk aplikasi Buku Tamu Orangutan.</p>
+                <div class="project-tags">
+                    <span class="project-tag">Figma</span>
+                    <span class="project-tag">UI/UX</span>
+                    <span class="project-tag">Prototyping</span>
+                </div>
+                <div class="project-btns">
+                    <a href="https://github.com/marianapurba2005-cmd/buku-tamu-orangutan-figma/tree/main" target="_blank" class="project-btn github">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.figma.com/design/LwxZjfknFT5swmkCEguqIQ/Untitled?node-id=206-3&t=tOG6kmAi270wnlqc-1" target="_blank" class="project-btn demo">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo Figma
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= TESTIMONIAL ================= -->
+<section class="testimonials">
+    <h2 class="section-title">Testimonials</h2>
+
+    <div class="testimonial-container">
+        <div class="testimonial-card reveal-left">
+            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+            <p>"Website nya lucu banget, aku jadi merasa kayak di alam mimpi."</p>
+            <h4>— Udin</h4>
+        </div>
+        <div class="testimonial-card reveal-right">
+            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+            <p>"Pemilihan warna cool and warm tone kamu bagus deh."</p>
+            <h4>— Asep</h4>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p class="section-subtitle reveal">Feel free to reach out for collaborations, projects, or simply a friendly conversation.</p>
+
+    <div class="contact-layout reveal">
+
+        <!-- Contact Links -->
+        <div class="contact-links-wrap">
+            <a href="https://wa.me/6283891972770" target="_blank" class="contact-link-card">
+                <div class="contact-link-icon" style="background: linear-gradient(135deg,#25d366,#128c7e);">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="contact-link-text">
+                    <span class="contact-link-label">WhatsApp</span>
+                    <span class="contact-link-value">Quick chat & collaboration</span>
+                    <span class="contact-link-detail">+62 838-9197-2770</span>
+                </div>
+                <i class="fa-solid fa-arrow-right contact-link-arrow"></i>
+            </a>
+
+            <a href="mailto:marianapurba2005@gmail.com" class="contact-link-card">
+                <div class="contact-link-icon" style="background: linear-gradient(135deg,#ea4335,#c62828);">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-link-text">
+                    <span class="contact-link-label">Email</span>
+                    <span class="contact-link-value">Professional inquiries</span>
+                    <span class="contact-link-detail">marianapurba2005@gmail.com</span>
+                </div>
+                <i class="fa-solid fa-arrow-right contact-link-arrow"></i>
+            </a>
+
+            <a href="https://www.instagram.com/marmaria_24?igsh=Nmo0czN5NjJsdWdk" target="_blank" class="contact-link-card">
+                <div class="contact-link-icon" style="background: linear-gradient(135deg,#e1306c,#833ab4);">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="contact-link-text">
+                    <span class="contact-link-label">Instagram</span>
+                    <span class="contact-link-value">Follow my journey</span>
+                    <span class="contact-link-detail">@marmaria_24</span>
+                </div>
+                <i class="fa-solid fa-arrow-right contact-link-arrow"></i>
+            </a>
+
+            <a href="https://github.com/marianapurba2005-cmd" target="_blank" class="contact-link-card">
+                <div class="contact-link-icon" style="background: linear-gradient(135deg,#333,#555);">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="contact-link-text">
+                    <span class="contact-link-label">GitHub</span>
+                    <span class="contact-link-value">Explore my code</span>
+                    <span class="contact-link-detail">marianapurba2005-cmd</span>
+                </div>
+                <i class="fa-solid fa-arrow-right contact-link-arrow"></i>
+            </a>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-card">
+            <h3 class="contact-form-title">Kirim Pesan</h3>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Nama" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Pesan" required></textarea>
+                <button type="submit">
+                    <i class="fa-solid fa-paper-plane me-2"></i>Kirim
+                </button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <div class="footer-left">
+        <img src="profile.jpeg" class="footer-profile" alt="Mariana Purba">
+        <h3>Mariana Purba</h3>
+        <p class="footer-tagline">Informatics Student & Creative Designer</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/marmaria_24?igsh=Nmo0czN5NjJsdWdk" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/6283891972770" target="_blank" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://github.com/marianapurba2005-cmd" target="_blank" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-divider">✦</div>
+
+    <div class="footer-nav">
+        <h4>Navigation</h4>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-divider">✦</div>
+
+    <div class="footer-right">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-location-dot"></i> Jl. Sempurna LK-II, Medan Helvetia</p>
+        <p><i class="fa-solid fa-phone"></i> 0838-9197-2770</p>
+        <p><i class="fa-solid fa-envelope"></i> marianapurba2005@gmail.com</p>
+        <div class="footer-currently">
+            <span>🎓 Learning Informatics</span>
+            <span>💻 Building Web Projects</span>
+            <span>🎨 Exploring UI/UX Design</span>
+        </div>
+    </div>
+</footer>
+
+<div class="copyright">
+    <p>© 2026 Mariana Purba. All rights reserved. &nbsp;·&nbsp; Built with HTML, CSS, &amp; JavaScript</p>
+</div>
+
+<!-- ================= PROJECT MODAL ================= -->
+<div id="projectModal" class="project-modal" role="dialog" aria-modal="true">
+    <div class="project-modal-inner">
+        <button class="project-modal-close" id="projectModalClose" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="project-modal-body">
+            <div class="project-modal-img-wrap">
+                <img id="projectModalImg" src="" alt="">
+            </div>
+            <div class="project-modal-content">
+                <h2 id="projectModalTitle"></h2>
+                <div id="projectModalTags" class="project-tags mb-3"></div>
+                <p id="projectModalDesc"></p>
+                <div class="project-modal-btns">
+                    <a id="projectModalGithub" href="#" target="_blank" class="project-btn github">
+                        <i class="fa-brands fa-github"></i> View Source
+                    </a>
+                    <a id="projectModalDemo" href="#" target="_blank" class="project-btn demo">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= CERTIFICATE LIGHTBOX ================= -->
+<div id="certLightbox" class="cert-lightbox" role="dialog" aria-modal="true">
+    <div class="cert-lightbox-inner">
+        <button class="cert-lightbox-close" id="certClose" aria-label="Close lightbox">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="cert-lightbox-info">
+            <h4 id="certLightboxTitle"></h4>
+            <p id="certLightboxIssuer"></p>
+        </div>
+        <img id="certLightboxImg" src="" alt="">
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
